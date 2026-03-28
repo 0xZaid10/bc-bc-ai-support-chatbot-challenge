@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { sendMessage, createTicket } from '../services/chatApi';
+import chatApi from '../services/chatApi';
 import type { ChatMessage, ChatSession, CreateTicketResponse } from '../types';
 
 interface UseChatReturn {
@@ -42,7 +42,7 @@ export function useChat(initialLanguage: string = 'en'): UseChatReturn {
     setError(null);
 
     try {
-      const response = await sendMessage({
+      const response = await chatApi.sendMessage({
         sessionId: sessionIdRef.current,
         message: message.trim(),
         language: language || detectedLanguage,
@@ -94,7 +94,7 @@ export function useChat(initialLanguage: string = 'en'): UseChatReturn {
     setError(null);
 
     try {
-      const ticket = await createTicket({
+      const ticket = await chatApi.createTicket({
         sessionId: sessionIdRef.current,
         message: lastUserMessageRef.current,
         language: detectedLanguage,

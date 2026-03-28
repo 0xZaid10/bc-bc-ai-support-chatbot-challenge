@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Ticket } from '../../types';
-import { getTicketById, updateTicket, reclassifyTicket } from '../../services/ticketsApi';
+import ticketsApi from '../../services/ticketsApi';
 import TicketStatusBadge from './TicketStatusBadge';
 import TicketPriorityBadge from './TicketPriorityBadge';
 import TicketCategoryTag from './TicketCategoryTag';
@@ -37,7 +37,7 @@ const TicketDetailPanel: React.FC<TicketDetailPanelProps> = ({ ticketId, onClose
     try {
       setLoading(true);
       setError(null);
-      const data = await getTicketById(ticketId);
+      const data = await ticketsApi.getTicketById(ticketId);
       setTicket(data);
       setSelectedStatus(data.status);
       setSelectedPriority(data.priority);
@@ -54,12 +54,12 @@ const TicketDetailPanel: React.FC<TicketDetailPanelProps> = ({ ticketId, onClose
       setUpdating(true);
       setUpdateError(null);
       setSuccessMessage(null);
-      const updated = await updateTicket(ticketId, {
+      const updated = await ticketsApi.updateTicket(ticketId, {
         status: selectedStatus !== ticket.status ? selectedStatus : undefined,
         priority: selectedPriority !== ticket.priority ? selectedPriority : undefined,
         notes: notes.trim() || undefined,
       });
-      const refreshed = await getTicketById(ticketId);
+      const refreshed = await ticketsApi.getTicketById(ticketId);
       setTicket(refreshed);
       setSelectedStatus(refreshed.status);
       setSelectedPriority(refreshed.priority);
@@ -80,8 +80,8 @@ const TicketDetailPanel: React.FC<TicketDetailPanelProps> = ({ ticketId, onClose
       setReclassifying(true);
       setUpdateError(null);
       setSuccessMessage(null);
-      await reclassifyTicket(ticketId);
-      const refreshed = await getTicketById(ticketId);
+      await ticketsApi.reclassifyTicket(ticketId);
+      const refreshed = await ticketsApi.getTicketById(ticketId);
       setTicket(refreshed);
       setSelectedStatus(refreshed.status);
       setSelectedPriority(refreshed.priority);

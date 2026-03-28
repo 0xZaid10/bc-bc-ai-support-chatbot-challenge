@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { ticketsApi } from '../services/ticketsApi';
+import ticketsApi from '../services/ticketsApi';
 import type {
   Ticket,
   TicketDetail,

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { DashboardStats } from '../types';
-import { getDashboardStats } from '../services/dashboardApi';
+import dashboardApi from '../services/dashboardApi';
 
 interface UseDashboardReturn {
   stats: DashboardStats | null;
@@ -18,7 +18,7 @@ export function useDashboard(): UseDashboardReturn {
     try {
       setLoading(true);
       setError(null);
-      const data = await getDashboardStats();
+      const data = await dashboardApi.dashboardApi.getDashboardStats();
       setStats(data);
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Failed to fetch dashboard statistics';
