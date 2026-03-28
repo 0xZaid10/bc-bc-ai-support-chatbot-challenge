@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "chat": "Chat",
+    "tickets": "Tickets",
+    "dashboard": "Dashboard",
+    "sync": "Sync",
+    "syncing": "Syncing...",
+    "syncSuccess": "Synced {{count}} tickets",
+    "syncFailed": "Sync failed"
+  },
+  "chat": {
+    "title": "AI Support Chat",
+    "subtitle": "Get instant help from our AI assistant",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "newSession": "New Chat",
+    "createTicket": "Create Ticket",
+    "creatingTicket": "Creating ticket...",
+    "ticketCreated": "Ticket created: #{{ticketId}}",
+    "ticketError": "Failed to create ticket",
+    "thinking": "AI is thinking...",
+    "you": "You",
+    "assistant": "Assistant",
+    "language": "Language",
+    "welcomeMessage": "Hello! I'm your AI support assistant. How can I help you today?",
+    "errorMessage": "Sorry, I encountered an error. Please try again.",
+    "sessionId": "Session ID",
+    "detectedLanguage": "Detected language"
+  },
+  "tickets": {
+    "title": "Support Tickets",
+    "subtitle": "Manage and track all support tickets",
+    "id": "Ticket ID",
+    "message": "Message",
+    "priority": "Priority",
+    "category": "Category",
+    "sentiment": "Sentiment",
+    "status": "Status",
+    "language": "Language",
+    "createdAt": "Created At",
+    "updatedAt": "Updated At",
+    "actions": "Actions",
+    "viewDetails": "View Details",
+    "noTickets": "No tickets found",
+    "loading": "Loading tickets...",
+    "error": "Failed to load tickets",
+    "filter": {
+      "title": "Filters",
+      "status": "Filter by Status",
+      "priority": "Filter by Priority",
+      "category": "Filter by Category",
+      "all": "All",
+      "apply": "Apply",
+      "reset": "Reset"
+    },
+    "pagination": {
+      "page": "Page {{current}} of {{total}}",
+      "previous": "Previous",
+      "next": "Next",
+      "showing": "Showing {{from}}-{{to}} of {{total}} tickets"
+    },
+    "status": {
+      "open": "Open",
+      "in-progress": "In Progress",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "sentiment": {
+      "positive": "Positive",
+      "neutral": "Neutral",
+      "negative": "Negative"
+    }
+  },
+  "ticketDetail": {
+    "title": "Ticket Details",
+    "back": "Back to Tickets",
+    "loading": "Loading ticket...",
+    "error": "Failed to load ticket",
+    "notFound": "Ticket not found",
+    "id": "Ticket ID",
+    "message": "Original Message",
+    "autoResponse": "AI Auto-Response",
+    "priority": "Priority",
+    "category": "Category",
+    "sentiment": "Sentiment",
+    "status": "Status",
+    "language": "Language",
+    "createdAt": "Created At",
+    "updatedAt": "Updated At",
+    "updateStatus": "Update Status",
+    "updating": "Updating...",
+    "updateSuccess": "Ticket updated successfully",
+    "updateError": "Failed to update ticket",
+    "reclassify": "Re-classify with AI",
+    "reclassifying": "Re-classifying...",
+    "reclassifySuccess": "Ticket re-classified successfully",
+    "reclassifyError": "Failed to re-classify ticket",
+    "notes": "Notes",
+    "notesPlaceholder": "Add notes about this ticket...",
+    "save": "Save Changes",
+    "cancel": "Cancel"
+  },
+  "dashboard": {
+    "title": "Monitoring Dashboard",
+    "subtitle": "Real-time support metrics and analytics",
+    "loading": "Loading dashboard...",
+    "error": "Failed to load dashboard data",
+    "refresh": "Refresh",
+    "lastUpdated": "Last updated: {{time}}",
+    "stats": {
+      "totalTickets": "Total Tickets",
+      "openTickets": "Open Tickets",
+      "resolvedTickets": "Resolved Tickets",
+      "avgResponseTime": "Avg Response Time",
+      "ms": "ms"
+    },
+    "charts": {
+      "priorityDistribution": "Tickets by Priority",
+      "sentimentDistribution": "Tickets by Sentiment",
+      "languageDistribution": "Tickets by Language",
+      "responseTime": "Response Time",
+      "noData": "No data available"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "sentiment": {
+      "positive": "Positive",
+      "neutral": "Neutral",
+      "negative": "Negative"
+    },
+    "language": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search",
+    "noResults": "No results found",
+    "appName": "AI Support",
+    "appTagline": "Powered by Gemini AI"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "switch": "Switch Language",
+    "current": "Current: {{lang}}"
+  },
+  "errors": {
+    "network": "Network error. Please check your connection.",
+    "server": "Server error. Please try again later.",
+    "notFound": "Resource not found.",
+    "unauthorized": "Unauthorized. Please log in.",
+    "validation": "Validation error. Please check your input.",
+    "unknown": "An unknown error occurred."
+  }
+}

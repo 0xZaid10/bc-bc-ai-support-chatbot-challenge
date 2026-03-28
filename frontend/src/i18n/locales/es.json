@@ -1,0 +1,207 @@
+{
+  "nav": {
+    "chat": "Chat",
+    "tickets": "Tickets",
+    "dashboard": "Panel de Control",
+    "sync": "Sincronizar",
+    "syncing": "Sincronizando...",
+    "syncSuccess": "Sincronización exitosa",
+    "syncFailed": "Error de sincronización"
+  },
+  "chat": {
+    "title": "Soporte al Cliente",
+    "subtitle": "Estoy aquí para ayudarte. ¿En qué puedo asistirte hoy?",
+    "placeholder": "Escribe tu mensaje...",
+    "send": "Enviar",
+    "typing": "Escribiendo...",
+    "createTicket": "Crear Ticket",
+    "ticketCreated": "Ticket creado exitosamente",
+    "ticketId": "ID de Ticket",
+    "newChat": "Nuevo Chat",
+    "you": "Tú",
+    "bot": "Asistente",
+    "errorSending": "Error al enviar el mensaje. Por favor intenta de nuevo.",
+    "errorCreatingTicket": "Error al crear el ticket. Por favor intenta de nuevo.",
+    "sessionId": "ID de Sesión",
+    "language": "Idioma",
+    "welcomeMessage": "¡Hola! Soy tu asistente de soporte con IA. ¿Cómo puedo ayudarte hoy?"
+  },
+  "tickets": {
+    "title": "Tickets de Soporte",
+    "subtitle": "Gestiona y rastrea todos los tickets de soporte al cliente",
+    "createTicket": "Crear Ticket",
+    "noTickets": "No se encontraron tickets",
+    "noTicketsDescription": "No hay tickets que coincidan con tus filtros actuales.",
+    "loading": "Cargando tickets...",
+    "error": "Error al cargar los tickets",
+    "columns": {
+      "ticketId": "ID de Ticket",
+      "message": "Mensaje",
+      "priority": "Prioridad",
+      "category": "Categoría",
+      "sentiment": "Sentimiento",
+      "status": "Estado",
+      "language": "Idioma",
+      "createdAt": "Creado",
+      "updatedAt": "Actualizado",
+      "actions": "Acciones"
+    },
+    "actions": {
+      "view": "Ver",
+      "edit": "Editar",
+      "resolve": "Resolver",
+      "reopen": "Reabrir",
+      "classify": "Reclasificar"
+    },
+    "filter": {
+      "title": "Filtrar Tickets",
+      "status": "Estado",
+      "priority": "Prioridad",
+      "category": "Categoría",
+      "allStatuses": "Todos los Estados",
+      "allPriorities": "Todas las Prioridades",
+      "allCategories": "Todas las Categorías",
+      "apply": "Aplicar Filtros",
+      "reset": "Restablecer",
+      "search": "Buscar tickets..."
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "showing": "Mostrando",
+      "of": "de",
+      "results": "resultados"
+    }
+  },
+  "ticketDetail": {
+    "title": "Detalle del Ticket",
+    "loading": "Cargando ticket...",
+    "error": "Error al cargar el ticket",
+    "notFound": "Ticket no encontrado",
+    "backToTickets": "Volver a Tickets",
+    "ticketId": "ID de Ticket",
+    "message": "Mensaje",
+    "autoResponse": "Respuesta Automática",
+    "priority": "Prioridad",
+    "category": "Categoría",
+    "sentiment": "Sentimiento",
+    "status": "Estado",
+    "language": "Idioma",
+    "createdAt": "Creado",
+    "updatedAt": "Actualizado",
+    "notes": "Notas",
+    "notesPlaceholder": "Agregar notas internas...",
+    "updateStatus": "Actualizar Estado",
+    "updatePriority": "Actualizar Prioridad",
+    "saveChanges": "Guardar Cambios",
+    "reclassify": "Reclasificar con IA",
+    "reclassifying": "Reclasificando...",
+    "reclassifySuccess": "Ticket reclasificado exitosamente",
+    "reclassifyError": "Error al reclasificar el ticket",
+    "updateSuccess": "Ticket actualizado exitosamente",
+    "updateError": "Error al actualizar el ticket",
+    "conversationHistory": "Historial de Conversación"
+  },
+  "dashboard": {
+    "title": "Panel de Monitoreo",
+    "subtitle": "Estadísticas en tiempo real y métricas de rendimiento",
+    "loading": "Cargando estadísticas...",
+    "error": "Error al cargar las estadísticas del panel",
+    "refresh": "Actualizar",
+    "lastUpdated": "Última actualización",
+    "stats": {
+      "totalTickets": "Total de Tickets",
+      "openTickets": "Tickets Abiertos",
+      "resolvedTickets": "Tickets Resueltos",
+      "avgResponseTime": "Tiempo de Respuesta Promedio",
+      "ms": "ms"
+    },
+    "charts": {
+      "priorityDistribution": "Distribución por Prioridad",
+      "sentimentAnalysis": "Análisis de Sentimiento",
+      "languageDistribution": "Distribución por Idioma",
+      "responseTime": "Tiempo de Respuesta",
+      "ticketsByCategory": "Tickets por Categoría"
+    },
+    "priority": {
+      "low": "Baja",
+      "medium": "Media",
+      "high": "Alta",
+      "urgent": "Urgente"
+    },
+    "sentiment": {
+      "positive": "Positivo",
+      "neutral": "Neutral",
+      "negative": "Negativo"
+    },
+    "language": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "status": {
+    "open": "Abierto",
+    "in_progress": "En Progreso",
+    "resolved": "Resuelto",
+    "closed": "Cerrado",
+    "pending": "Pendiente"
+  },
+  "priority": {
+    "low": "Baja",
+    "medium": "Media",
+    "high": "Alta",
+    "urgent": "Urgente"
+  },
+  "sentiment": {
+    "positive": "Positivo",
+    "neutral": "Neutral",
+    "negative": "Negativo"
+  },
+  "category": {
+    "billing": "Facturación",
+    "technical": "Técnico",
+    "general": "General",
+    "account": "Cuenta",
+    "shipping": "Envío",
+    "returns": "Devoluciones",
+    "other": "Otro"
+  },
+  "language": {
+    "en": "Inglés",
+    "es": "Español",
+    "switch": "Cambiar Idioma"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "view": "Ver",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "reset": "Restablecer",
+    "apply": "Aplicar",
+    "yes": "Sí",
+    "no": "No",
+    "unknown": "Desconocido",
+    "notAvailable": "N/D",
+    "copyId": "Copiar ID",
+    "copied": "¡Copiado!"
+  },
+  "errors": {
+    "networkError": "Error de red. Por favor verifica tu conexión.",
+    "serverError": "Error del servidor. Por favor intenta de nuevo más tarde.",
+    "notFound": "El recurso solicitado no fue encontrado.",
+    "unauthorized": "No estás autorizado para realizar esta acción.",
+    "validationError": "Por favor verifica los datos ingresados.",
+    "unknownError": "Ocurrió un error desconocido."
+  }
+}
